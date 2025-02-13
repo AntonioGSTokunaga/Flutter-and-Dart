@@ -25,11 +25,11 @@ class PopulacaoCoelhos {
   PopulacaoCoelhos(this.jovens, this.adultos);
 
   void progredirMes() {
-    int novosAdultos = jovens;
-    int novosJovens = adultos * 2;
+    //int novosAdultos = jovens;
+    //int novosJovens = adultos + jovens;  //* 2;
 
-    adultos += novosAdultos;
-    jovens = novosJovens;
+    adultos += jovens;//novosAdultos;
+    jovens = adultos;//novosJovens;
   }
 
   void aplicarPredacao(double taxa) {
